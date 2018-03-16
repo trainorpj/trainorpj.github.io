@@ -17,7 +17,7 @@
 
   <article class="flex sm:max-w-md md:max-w-lg md:flex-row flex-col md:content-center">
     <main class="md:p-6 p-6">
-      <header class="name-box">
+      <header class="mb-4">
         <h1>PJ Trainor</h1>
       </header>
       <content class="flex flex-col">
@@ -51,7 +51,7 @@
         </p>
       </content>
     </main>
-    <aside class="flex md:flex-col-reverse flex-col md:justify-around self-center md:mt-6">
+    <aside class="flex md:flex-col-reverse flex-col md:justify-between md:-mt-4 self-center">
       <template id="social-list"></template>
       <img class="rounded shadow m-px mb-3 h-auto max-w-xs" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1245865/12605435_10208704428476466_6435486384572268632_o%20(1).jpg"
         alt="a picture of me">
@@ -63,7 +63,7 @@
     <li v-for="(value, key) in social" :id="`${key}-link`">
       <a :href="value.link">
       <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-        <path fill="#c70025" :d="value.svg" />
+        <path fill="#000000" :d="value.svg" />
       </svg>
       </a>
     </li>
