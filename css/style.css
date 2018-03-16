@@ -1,0 +1,14 @@
+body {
+  background: #71b1b9;
+}
+
+.name-box {
+  background-color: #c70025;
+  color: #71b1b9;
+  padding: 1em;
+}
+
+content>p {
+  margin-top: 1rem;
+  color: #1b1b2d;
+}

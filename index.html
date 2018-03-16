@@ -2,233 +2,82 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="UTF-8">
+  <title>PJ Trainor</title>
 
-    <title> PJ Trainor </title>
 
-    <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic|Playfair+Display' rel='stylesheet' type='text/css'>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+  <link rel='stylesheet prefetch' href='https://unpkg.com/tailwindcss@latest/dist/tailwind.min.css'>
+
+  <link rel="stylesheet" href="css/style.css">
 
 
 </head>
-<style>
-    .container.content .row h3 {
-        margin-top: 0px;
-    }
-</style>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top custom-nav" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-name" href="index.html">PJ Trainor</a>
-            </div>
-            <div>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <article class="flex sm:max-w-md md:max-w-lg md:flex-row flex-col md:content-center">
+    <main class="md:p-6 p-6">
+      <header class="name-box">
+        <h1>PJ Trainor</h1>
+      </header>
+      <content class="flex flex-col">
+        <p>
+          I'm an analyst at the Johns Hopkins University Applied Physics Lab.
+        </p>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-text">
-                        <p class="name">PJ Trainor</p>
-                        <p class="skills">Data Visualization</p>
-                        <p class="skills">Mathematics</p>
-                        <p class="skills">Design</p>
+        <p>
+          I really love web development. My journey started out making data visualizations, but now I'm involved in all sorts of front-end
+          open source software &mdash; Vue, (P)React, d3, babel, build tools, and more. It's such a wonderful community.
+        </p>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+        <p>
+          Learning is important to me. I'm self-taught in a lot of things, so I know how hard it is to get started. To help others,
+          I write. Whenever I learned something new or challenging, I try to write about it. Sometimes it's about code, but
+          I also like to write about film and math.
+        </p>
 
-    <div class="container content">
-        <div class="row section">
-            <div class="col-lg-12">
-                <h1 class="page-header">Data Visualization</h1>
-            </div>
-        </div>
+        <p>
+          Code, film, and math are some of my favorite things, but I do other things too. Sometimes I perform stand-up comedy, I read
+          lots of fiction, and I play Frisbee, tennis, the guitar, and the ukulele.
+        </p>
 
-        <div class="row">
-            <div class="col-md-7">
-                <a href="barsetshire.html">
-                    <img class="img-responsive" src="pictures/barsetpre1small.jpg">
-                </a>
-            </div>
-            <div class="col-md-4">
-                <h3>Barsetshire Chronicles</h3>
-                <p>
-                    How do themes, concepts, and style develop throughout an entire series?
-                </p>
-                <p>
-                    Here we look at an example in Victorian literature, using word frequencies in Anthony Trollope's Barsetshire Chronicles to track thematic content.
-                </p>
-                <a href="barsetshire.html">
-                    <button class="btn btn-default btn-sm">View Project</button>
-                </a>
-            </div>
-        </div>
+        <p>
+          I'm currently working towards my Master's in Applied Math. I went to Swarthmore College for undergrad, where I studied Math,
+          Film, and Economics.
+        </p>
+
+        <p>
+          I know my website isn't fancy. I promise my other work is.
+        </p>
+      </content>
+    </main>
+    <aside class="flex md:flex-col-reverse flex-col md:justify-around self-center md:mt-6">
+      <template id="social-list"></template>
+      <img class="rounded shadow m-px mb-3 h-auto max-w-xs" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1245865/12605435_10208704428476466_6435486384572268632_o%20(1).jpg"
+        alt="a picture of me">
+    </aside>
+  </article>
+
+  <script type="text/x-template" id="social-list-template">
+  <ul class="list-reset flex justify-around pt-4 pb-4 md:pt-2 md:pb-2">
+    <li v-for="(value, key) in social" :id="`${key}-link`">
+      <a :href="value.link">
+      <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+        <path fill="#c70025" :d="value.svg" />
+      </svg>
+      </a>
+    </li>
+  </ul>
+</script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js'></script>
 
 
-        <div class="row">
-            <div class="col-md-7">
-                <a href="director-careers.html">
-                    <img class="img-responsive" src="pictures/dirpre1small.jpg">
-                </a>
-            </div>
-            <div class="col-md-4">
-                <h3>Careers of Directors</h3>
-                <p>
-                    Does a director's career path have anything to say about their role as an artist?
-                </p>
-                <p>
-                    Look at the careers of 25 directors, see what they do behind (and in front of) the camera, and how they match up with their peers.
-                </p>
-                <a href="director-careers.html">
-                    <button class="btn btn-default btn-sm">View Project</button>
-                </a>
-            </div>
-        </div>
+
+  <script src="js/index.js"></script>
 
 
-        <div class="row">
-            <div class="col-md-7">
-                <a href="libarts.html">
-                    <img class="img-responsive" src="pictures/libartpre1small.jpg">
-                </a>
-            </div>
-            <div class="col-md-4">
-                <h3>Liberal Arts Education</h3>
-                <p>
-                    What does an education look like? Are liberal arts students actually well-rounded?
-                </p>
-                <p>
-                    This demo gives a snapshot of the liberal arts education, showing that these students have diverse and deep academic backgrounds.
-                </p>
-                <a href="libarts.html">
-                    <button class="btn btn-default btn-sm">View Project</button>
-                </a>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-7">
-                <a href="solitude.html">
-                    <img class="img-responsive" src="pictures/solitude/preview1small.jpg">
-                </a>
-            </div>
-            <div class="col-md-4">
-                <h3>One Hundred Years of Solitude</h3>
-                <p>
-                    In a novel as complex as this one, you might want some help keeping track of things...
-                </p>
-                <p>
-                    Check out this sketch that marks character appearances and key narrative moments in this legendary work.
-                </p>
-                <a href="solitude.html">
-                    <button class="btn btn-default btn-sm">View Project</button>
-                </a>
-            </div>
-        </div>
-
-        <div class="row about" id="about">
-            <div class="aboutbin">
-                <div class="col-md-4 col-md-offset-2 text-center aboutdetail">
-                    <h1>About</h1>
-                    <p>
-                        I'm a student at Swarthmore College, where I study Mathematics, Economics, and Film and Media Studies. For the past year I've done several projects in data visualization, which I've found to be a natural extension of my fields of study.
-                    </p>
-                    <p>
-                        Outside of school, I play frisbee for the Swarthmore Earthworms, I write jokes and occasionally perform them at stand-up shows, and I have a particular interest in Latin American literature.
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <img class="img-circle img-responsive" src="pictures/aboutpic.jpg">
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Other Work</h1>
-            </div>
-        </div>
-
-        <div class="row text-center">
-            <div class="col-md-6">
-                <a href="otherwork.html#filmlink">
-                    <img class="img-responsive" src="pictures/filmsnip.png">
-                    <h2 class="caption">Short Films</h2>
-                </a>
-            </div>
-            <div class="col-md-6">
-                <a href="otherwork.html#paperlink">
-                    <img class="img-responsive" src="pictures/papersnip.png">
-                    <h2 class="caption">Papers and Presentations</h2>
-                </a>
-            </div>
-        </div>
-
-    </div>
-
-    <footer class="text-center" id="contact">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-12">
-                        <h3>Find me on</h3>
-                        <ul class="list-inline">
-                            <li><a href="https://github.com/trainorpj">Github</a></li>
-                            <li><a href="https://www.linkedin.com/in/trainorpj">Linkedin</a></li>
-                        </ul>
-                        <a href="mailto:trainorpj@gmail.com">trainorpj@gmail.com</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-        (function($) {
-            $(document).ready(function() {
-
-                // hide .navbar first
-                $(".navbar").hide();
-
-                // fade in .navbar
-                $(function() {
-                    $(window).scroll(function() {
-
-                        // set distance user needs to scroll before we start fadeIn
-                        if ($(this).scrollTop() > 100) {
-                            $('.navbar').fadeIn();
-                        } else {
-                            $('.navbar').fadeOut();
-                        }
-                    });
-                });
-
-            });
-        }(jQuery));
-    </script>
 
 
 </body>
+
+</html>
