@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>PJ Trainor</title>
+
+
+  <link rel='stylesheet prefetch' href='https://unpkg.com/tailwindcss@latest/dist/tailwind.min.css'>
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+  <article class="flex sm:max-w-md md:max-w-lg md:flex-row flex-col md:content-center">
+    <main class="md:p-6 p-6">
+      <header class="name-box">
+        <h1>PJ Trainor</h1>
+      </header>
+      <content class="flex flex-col">
+        <p>
+          I'm an analyst at the Johns Hopkins University Applied Physics Lab.
+        </p>
+
+        <p>
+          I really love web development. My journey started out making data visualizations, but now I'm involved in all sorts of front-end
+          open source software &mdash; Vue, (P)React, d3, babel, build tools, and more. It's such a wonderful community.
+        </p>
+
+        <p>
+          Learning is important to me. I'm self-taught in a lot of things, so I know how hard it is to get started. To help others,
+          I write. Whenever I learned something new or challenging, I try to write about it. Sometimes it's about code, but
+          I also like to write about film and math.
+        </p>
+
+        <p>
+          Code, film, and math are some of my favorite things, but I do other things too. Sometimes I perform stand-up comedy, I read
+          lots of fiction, and I play Frisbee, tennis, the guitar, and the ukulele.
+        </p>
+
+        <p>
+          I'm currently working towards my Master's in Applied Math. I went to Swarthmore College for undergrad, where I studied Math,
+          Film, and Economics.
+        </p>
+
+        <p>
+          I know my website isn't fancy. I promise my other work is.
+        </p>
+      </content>
+    </main>
+    <aside class="flex md:flex-col-reverse flex-col md:justify-around self-center md:mt-6">
+      <template id="social-list"></template>
+      <img class="rounded shadow m-px mb-3 h-auto max-w-xs" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1245865/12605435_10208704428476466_6435486384572268632_o%20(1).jpg"
+        alt="a picture of me">
+    </aside>
+  </article>
+
+  <script type="text/x-template" id="social-list-template">
+  <ul class="list-reset flex justify-around pt-4 pb-4 md:pt-2 md:pb-2">
+    <li v-for="(value, key) in social" :id="`${key}-link`">
+      <a :href="value.link">
+      <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+        <path fill="#c70025" :d="value.svg" />
+      </svg>
+      </a>
+    </li>
+  </ul>
+</script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js'></script>
+
+
+
+  <script src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
