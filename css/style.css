@@ -1,3 +1,20 @@
-content > p:not(:first-child) {
+/* content > p:not(:first-child) {
   margin-top: 1rem;
+} */
+
+p {
+  width: 24em;
+  padding-bottom: 1em;
+}
+
+li {
+  margin-top: 0.25em;
+}
+
+a:link {
+  color: rgb(77, 167, 228);
+}
+
+a:visited {
+  color: rgb(77, 167, 228);
 }
