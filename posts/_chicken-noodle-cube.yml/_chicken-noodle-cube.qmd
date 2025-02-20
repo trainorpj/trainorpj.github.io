@@ -1,0 +1,41 @@
+---
+title: "Chicken Noodle Cube (Magic The Gathering)"
+format: html
+draft: true
+---
+
+This is an analysis of the [Chicken Noodle Cube](https://cubecobra.com/cube/overview/2d0fde97-e28c-4ba4-84fc-f271016e9578). This is a collection of Magic the Gathering cards I use to play with my friends. While this is a fufilling creative and social endeavor, it also presents me with a rich dataset.
+
+I compiled the database ahead of time:
+
+```
+$ ./01-download-cards.sh
+$ ./02-download-scryfall.sh
+$ duckdb cube.duckdb < 01-create-views.sql
+```
+
+Now, onto the analysis! `cards` is the main table we're working with
+
+```{python}
+import duckdb
+import pandas as pd
+import seaborn as sns
+
+cube = duckdb.connect("cube.duckdb")
+cube.query("select * from cards limit 1").to_df().iloc[0]
+```
+
+Mana curves:
+
+```{python}
+(
+    cube.query("""
+    select color_category, cmc as cmc
+    from cards 
+    where color_category != 'Lands'
+    """)
+    .to_df()
+    .pipe(lambda df: sns.ecdfplot(data=df, x="cmc", hue="color_category"))
+)
+```
+

@@ -1,0 +1,372 @@
+name,CMC,Type,Color,Set,Collector Number,Rarity,Color Category,status,Finish,maybeboard,image URL,image Back URL,tags,Notes,MTGO ID
+"Basri, Tomorrow's Champion",1,"Legendary Creature - Human Knight",W,"dft","3",rare,White,Not Owned,,false,,,"when-you-cycle;cycling","",136129
+"Hinterland Sanctifier",1,"Creature - Rabbit Cleric",W,"fdn","730",common,White,Owned,Non-foil,false,,,"","",
+"Mikaeus, the Lunarch",1,"Legendary Creature - Human Cleric",W,"j25","225",mythic,White,Not Owned,,false,,,"","",
+"Savannah Lions",1,"Creature - Cat",W,"fdn","146",rare,White,Owned,Non-foil,false,,,"Bye","",133318
+"Usher of the Fallen",1,"Creature - Spirit Warrior",W,"khm","35",uncommon,White,Not Owned,,false,,,"","",87393
+"Ajani's Pridemate",2,"Creature - Cat Soldier",W,"fdn","135",uncommon,White,Owned,Non-foil,false,,,"","",133296
+"Cathar Commando",2,"Creature - Human Soldier",W,"inr","336",common,White,Owned,,false,,,"","",134958
+"Charming Prince",2,"Creature - Human Noble",W,"fdn","568",rare,White,Owned,Non-foil,false,,,"","",
+"Dawnwing Marshal",2,"Creature - Cat Soldier",W,"fdn","570",uncommon,White,Owned,Non-foil,false,,,"","",
+"Felidar Cub",2,"Creature - Cat Beast",W,"fdn","573",common,White,Owned,Non-foil,false,,,"","",
+"Luminarch Aspirant",2,"Creature - Human Cleric",W,"ncc","205",rare,White,Not Owned,,false,,,"","",
+"Resolute Reinforcements",2,"Creature - Human Soldier",W,"fdn","145",uncommon,White,Owned,Non-foil,false,,,"","",133316
+"Angel of Vitality",3,"Creature - Angel",W,"fdn","706",uncommon,White,Owned,Non-foil,false,,,"","",
+"Arahbo, the First Fang",3,"Legendary Creature - Cat Avatar",W,"fdn","363",rare,White,Owned,,false,,,"","",132996
+"Cat Collector",3,"Creature - Human Citizen",W,"fdn","4",uncommon,White,Owned,Non-foil,false,,,"","",133576
+"Crusader of Odric",3,"Creature - Human Soldier",W,"fdn","569",uncommon,White,Owned,Non-foil,false,,,"","",
+"Inspiring Overseer",3,"Creature - Angel Cleric",W,"fdn","496",common,White,Owned,Non-foil,false,,,"","",
+"Inspiring Paladin",3,"Creature - Human Knight",W,"fdn","18",common,White,Owned,,false,,,"","",133604
+"Linden, the Steadfast Queen",3,"Legendary Creature - Human Noble",W,"fdn","577",rare,White,Owned,Non-foil,false,,,"","",
+"Mentor of the Meek",3,"Creature - Human Soldier",W,"fdn","578",rare,White,Owned,Non-foil,false,,,"","",
+"Roc Charger",3,"Creature - Bird",W,"clu","70",uncommon,White,Owned,,false,,,"","",122924
+"Stormwild Capridor",3,"Creature - Bird Goat",W,"iko","34",uncommon,White,Owned,,false,,,"","",80077
+"Jazal Goldmane",4,"Legendary Creature - Cat Warrior",W,"fdn","497",rare,White,Owned,,false,,,"","",
+"Timely Hordemate",4,"Creature - Human Warrior",W,"ktk","27",uncommon,White,Owned,,false,,,"","",54274
+"Ingenious Leonin",5,"Creature - Cat Soldier",W,"fdn","495",uncommon,White,Owned,,false,,,"","",
+"Patron of the Valiant",5,"Creature - Angel",W,"j25","237",uncommon,White,Owned,,false,,,"","",
+"Syr Alin, the Lion's Claw",5,"Legendary Creature - Human Knight",W,"fdn","582",uncommon,White,Owned,Non-foil,false,,,"","",
+"Archon of Falling Stars",6,"Creature - Archon",W,"j25","166",uncommon,White,Owned,,false,,,"","",
+"Eagles of the North",6,"Creature - Bird Soldier",W,"ltr","7",common,White,Not Owned,,false,,,"when-you-cycle;cycling","",111924
+"Divine Resilience",1,"Instant",W,"fdn","10",uncommon,White,Owned,Non-foil,false,,,"kicker","",133588
+"Joust Through",1,"Instant",W,"fdn","19",uncommon,White,Owned,Non-foil,false,,,"","",133606
+"Dauntless Unity",2,"Instant",W,"j25","183",common,White,Not Owned,,false,,,"kicker","",
+"Disenchant",2,"Instant",W,"fdn","572",common,White,Owned,Non-foil,false,,,"","",
+"Valorous Stance",2,"Instant",W,"fdn","583",uncommon,White,Owned,Non-foil,false,,,"","",
+"Will of the All-Hunter",2,"Instant",W,"iko","38",uncommon,White,Owned,,false,,,"cycling","",80085
+"Make a Stand",3,"Instant",W,"fdn","708",uncommon,White,Owned,Non-foil,false,,,"","",
+"Stroke of Midnight",3,"Instant",W,"fdn","148",uncommon,White,Owned,Non-foil,false,,,"","",133322
+"Rally to Battle",4,"Instant",W,"clu","69",uncommon,White,Owned,,false,,,"","",122922
+"When We Were Young",4,"Instant",W,"neo","43",uncommon,White,Owned,,false,,,"","",97000
+"Eternal Isolation",2,"Sorcery",W,"m20","15",uncommon,White,Owned,,false,,,"","",72929
+"Marshaling Cry",3,"Sorcery",W,"fut","13",common,White,Not Owned,,false,,,"when-you-cycle;cycling","",26744
+"Decree of Justice",4,"Sorcery",W,"mh3","263",uncommon,White,Not Owned,,false,,,"when-you-cycle;cycling","",125937
+"Release the Dogs",4,"Sorcery",W,"fdn","580",uncommon,White,Owned,Non-foil,false,,,"","",
+"Fumigate",5,"Sorcery",W,"fdn","575",rare,White,Owned,Non-foil,false,,,"","",
+"Terminus",6,"Sorcery",W,"dsc","70",rare,White,Not Owned,,false,,,"","",131285
+"Astral Drift",3,"Enchantment",W,"c20","76",rare,White,Not Owned,,false,,,"when-you-cycle;cycling","",
+"Divine Sacrament",3,"Enchantment",W,"dmr","5",rare,White,Not Owned,,false,,,"","",107499
+"Stasis Snare",3,"Enchantment",W,"fdn","581",uncommon,White,Owned,Non-foil,false,,,"","",
+"Twinblade Blessing",3,"Enchantment - Aura",W,"fdn","26",uncommon,White,Owned,Non-foil,false,,,"","",133620
+"Angelic Destiny",4,"Enchantment - Aura",W,"fdn","565",mythic,White,Owned,Non-foil,false,,,"","",
+"Felidar Retreat",4,"Enchantment",W,"fdn","574",rare,White,Owned,Non-foil,false,,,"","",
+"Runic Shot",1,"Sorcery",W,"dmu","30",uncommon,White,Not Owned,,false,,,"kicker","",102536
+"Benalish Sleeper",2,"Creature - Phyrexian Human Soldier",W,"dmu","8",common,White,Not Owned,,false,,,"kicker","",102492
+"Heroic Charge",4,"Instant",W,"dmu","20",common,White,Not Owned,,false,,,"kicker","",102516
+"Nephalia Smuggler",1,"Creature - Human Rogue",U,"plst","DDQ-27",uncommon,Blue,Not Owned,,false,,,"","",
+"Siren Stormtamer",1,"Creature - Siren Pirate Wizard",U,"plst","XLN-79",uncommon,Blue,Not Owned,,false,,,"","",
+"Spectral Sailor",1,"Creature - Spirit Pirate",U,"fdn","164",uncommon,Blue,Owned,Non-foil,false,,,"","",133354
+"Triton Shorestalker",1,"Creature - Merfolk Rogue",U,"otc","121",common,Blue,Not Owned,,false,,,"","",124701
+"Azure Mage",2,"Creature - Human Wizard",U,"mm3","31",uncommon,Blue,Owned,,false,,,"","",63249
+"Brineborn Cutthroat",2,"Creature - Merfolk Pirate",U,"fdn","152",uncommon,Blue,Owned,Non-foil,false,,,"","",133330
+"Harbinger of the Tides",2,"Creature - Merfolk Wizard",U,"fdn","593",rare,Blue,Owned,Non-foil,false,,,"","",
+"Mischievous Mystic",2,"Creature - Human Wizard",U,"fdn","47",uncommon,Blue,Owned,Non-foil,false,,,"","",133662
+"Picklock Prankster",2,"Creature - Faerie Rogue",U,"woe","64",uncommon,Blue,Not Owned,Non-foil,false,,,"","",116432
+"Plumecreed Escort",2,"Creature - Bird Scout",U,"blb","65",uncommon,Blue,Owned,,false,,,"","",129375
+"Scrounging Skyray",2,"Creature - Fish Pirate",U,"dft","60",uncommon,Blue,Not Owned,,false,,,"","",136243
+"Shoreline Looter",2,"Creature - Rat Rogue",U,"blb","70",uncommon,Blue,Not Owned,,false,,,"","",129385
+"Mocking Sprite",3,"Creature - Faerie Rogue",U,"fdn","159",common,Blue,Owned,Non-foil,false,,,"","",133344
+"Tempest Djinn",3,"Creature - Djinn",U,"fdn","598",rare,Blue,Owned,Non-foil,false,,,"","",
+"Vizier of Tumbling Sands",3,"Creature - Human Cleric",U,"cmm","131",common,Blue,Not Owned,,false,,,"when-you-cycle;cycling","",115361
+"Avian Oddity",4,"Creature - Bird",U,"iko","42",uncommon,Blue,Owned,,false,,,"when-you-cycle;cycling","",80093
+"Clinquant Skymage",4,"Creature - Bird Wizard",U,"fdn","33",uncommon,Blue,Owned,Non-foil,false,,,"","",133634
+"Curator of Mysteries",4,"Creature - Sphinx",U,"afc","81",rare,Blue,Not Owned,,false,,,"when-you-cycle;cycling","",
+"Micromancer",4,"Creature - Human Wizard",U,"fdn","158",uncommon,Blue,Owned,Non-foil,false,,,"","",133342
+"Rescuer Sphinx",4,"Creature - Sphinx",U,"clu","95",uncommon,Blue,Owned,,false,,,"","",122974
+"Mulldrifter",5,"Creature - Elemental",U,"sld","1887",rare,Blue,Not Owned,,false,,,"","",
+"Voracious Greatshark",5,"Creature - Shark",U,"fdn","600",rare,Blue,Not Owned,,false,,,"","",
+"Windstorm Drake",5,"Creature - Drake",U,"j25","392",uncommon,Blue,Owned,,false,,,"","",
+"Windcaller Aven",6,"Creature - Bird Wizard",U,"j25","390",common,Blue,Not Owned,,false,,,"when-you-cycle;cycling","",
+"Tolarian Terror",7,"Creature - Serpent",U,"fdn","167",common,Blue,Owned,Non-foil,false,,,"","",133360
+"Kederekt Leviathan",8,"Creature - Leviathan",U,"2x2","55",rare,Blue,Not Owned,,false,,,"","",101594
+"Opt",1,"Instant",U,"fdn","512",common,Blue,Owned,Non-foil,false,,,"","",
+"Unsummon",1,"Instant",U,"fdn","599",common,Blue,Owned,Non-foil,false,,,"","",
+"Censor",2,"Instant",U,"akh","46",uncommon,Blue,Not Owned,,false,,,"when-you-cycle;cycling","",63694
+"Essence Scatter",2,"Instant",U,"fdn","153",common,Blue,Owned,Non-foil,false,,,"","",133332
+"Into the Roil",2,"Instant",U,"fdn","509",common,Blue,Owned,Non-foil,false,,,"kicker","",
+"Negate",2,"Instant",U,"fdn","710",common,Blue,Owned,Non-foil,false,,,"","",
+"Think Twice",2,"Instant",U,"fdn","165",common,Blue,Owned,Non-foil,false,,,"","",133356
+"Turn to Frog",2,"Instant",U,"clu","103",uncommon,Blue,Owned,,false,,,"","",122990
+"Admiral's Order",3,"Instant",U,"rix","31",rare,Blue,Not Owned,,false,,,"","",66515
+"Complicate",3,"Instant",U,"plst","ONS-76",uncommon,Blue,Not Owned,,false,,,"when-you-cycle;cycling","",
+"Faebloom Trick",3,"Instant",U,"fdn","38",uncommon,Blue,Owned,Non-foil,false,,,"","",133644
+"Neutralize",3,"Instant",U,"plst","IKO-59",uncommon,Blue,Not Owned,,false,,,"when-you-cycle;cycling","",
+"Refute",3,"Instant",U,"fdn","48",common,Blue,Owned,Non-foil,false,,,"","",133664
+"Chart a Course",2,"Sorcery",U,"fdn","586",uncommon,Blue,Owned,Non-foil,false,,,"","",
+"Call to Mind",3,"Sorcery",U,"c14","101",uncommon,Blue,Owned,,false,,,"","",54869
+"Inspiration from Beyond",3,"Sorcery",U,"fdn","43",uncommon,Blue,Not Owned,,false,,,"","",133654
+"Rite of Replication",4,"Sorcery",U,"fdn","711",rare,Blue,Owned,Non-foil,false,,,"kicker","",
+"River's Rebuke",6,"Sorcery",U,"fdn","595",rare,Blue,Owned,Non-foil,false,,,"","",
+"Treasure Cruise",8,"Sorcery",U,"mb2","37",common,Blue,Not Owned,,false,,,"","",133966
+"Hard Cover",1,"Enchantment - Aura",U,"m20","63",uncommon,Blue,Owned,,false,,,"","",73025
+"Witness Protection",1,"Enchantment - Aura",U,"fdn","168",common,Blue,Owned,Non-foil,false,,,"","",133362
+"Escape Protocol",2,"Enchantment",U,"iko","48",uncommon,Blue,Not Owned,,false,,,"","",80105
+"Riddleform",2,"Enchantment",U,"m21","64",uncommon,Blue,Owned,,false,,,"","",81355
+"Drake Haven",3,"Enchantment",U,"c20","110",rare,Blue,Not Owned,,false,,,"","",
+"Imprisoned in the Moon",3,"Enchantment - Aura",U,"inr","69",common,Blue,Owned,,false,,,"","",135518
+"Confiscate",6,"Enchantment - Aura",U,"fdn","709",uncommon,Blue,Owned,Non-foil,false,,,"","",
+"Protect the Negotiators",2,"Instant",U,"plst","DMU-62",uncommon,Blue,Not Owned,,false,,,"kicker","",
+"Rona's Vortex",1,"Instant",U,"dmu","63",uncommon,Blue,Not Owned,,false,,,"kicker","",102602
+"Mystical Teachings",4,"Instant",BU,"fdn","594",common,Blue,Owned,Non-foil,false,,,"","",
+"Bloodsoaked Champion",1,"Creature - Human Warrior",B,"clb","740",rare,Black,Not Owned,,false,,,"","",
+"Gutterbones",1,"Creature - Skeleton Warrior",B,"rna","76",rare,Black,Not Owned,,false,,,"","",71152
+"Infestation Sage",1,"Creature - Elf Warlock",B,"fdn","64",common,Black,Not Owned,,false,,,"","",133696
+"Pulse Tracker",1,"Creature - Vampire Rogue",B,"fdn","612",common,Black,Owned,Non-foil,false,,,"","",
+"Ruthless Sniper",1,"Creature - Human Archer",B,"akh","105",uncommon,Black,Not Owned,,false,,,"","",63812
+"Cabal Initiate",2,"Creature - Human Warlock",B,"mh2","78",common,Black,Not Owned,,false,,,"","",90529
+"Gatekeeper of Malakir",2,"Creature - Vampire Warrior",B,"fdn","713",uncommon,Black,Owned,Non-foil,false,,,"kicker","",
+"Gnawing Zombie",2,"Creature - Zombie",B,"j25","446",common,Black,Owned,,false,,,"","",
+"Hungry Ghoul",2,"Creature - Zombie",B,"fdn","62",common,Black,Owned,,false,,,"","",133692
+"Kalastria Highborn",2,"Creature - Vampire Shaman",B,"fdn","607",rare,Black,Owned,Non-foil,false,,,"","",
+"Reassembling Skeleton",2,"Creature - Skeleton Warrior",B,"j25","481",uncommon,Black,Owned,,false,,,"","",
+"Sanguine Syphoner",2,"Creature - Vampire Warlock",B,"fdn","68",common,Black,Owned,,false,,,"","",133704
+"The Raven Man",2,"Legendary Creature - Human Wizard",B,"dmu","103",rare,Black,Not Owned,,false,,,"","",102682
+"Vampire Gourmand",2,"Creature - Vampire",B,"fdn","74",uncommon,Black,Owned,,false,,,"","",133716
+"Vengeful Bloodwitch",2,"Creature - Vampire Warlock",B,"fdn","76",uncommon,Black,Owned,Non-foil,false,,,"","",133720
+"Vraan, Executioner Thane",2,"Legendary Creature - Phyrexian Vampire",B,"one","114",rare,Black,Owned,Non-foil,false,,,"","",106443
+"Graveblade Marauder",3,"Creature - Human Warrior",B,"j25","451",uncommon,Black,Owned,,false,,,"","",
+"Gray Slaad",3,"Creature - Frog Horror",B,"clb","129",common,Black,Not Owned,,false,,,"","",100272
+"Marauding Blight-Priest",3,"Creature - Vampire Cleric",B,"fdn","178",common,Black,Owned,Non-foil,false,,,"","",133382
+"Midnight Reaper",3,"Creature - Zombie Knight",B,"fdn","609",rare,Black,Owned,Non-foil,false,,,"","",
+"Soulreaper of Mogis",3,"Enchantment Creature - Minotaur Shaman",B,"thb","115",common,Black,Owned,,false,,,"","",79354
+"Stromkirk Bloodthief",3,"Creature - Vampire Rogue",B,"fdn","185",uncommon,Black,Owned,Non-foil,false,,,"","",133396
+"Billowing Shriekmass",4,"Creature - Spirit",B,"fdn","56",uncommon,Black,Owned,,false,,,"","",133680
+"Bloodbond Vampire",4,"Creature - Vampire Shaman Ally",B,"bfz","104",uncommon,Black,Not Owned,Non-foil,false,,,"","",58373
+"Desecration Demon",4,"Creature - Demon",B,"fdn","603",rare,Black,Owned,Non-foil,false,,,"","",
+"Vile Entomber",4,"Creature - Zombie Warlock",B,"fdn","616",uncommon,Black,Owned,Non-foil,false,,,"","",
+"Syr Konrad, the Grim",5,"Legendary Creature - Human Knight",B,"mkc","141",uncommon,Black,Owned,Non-foil,false,,,"","",122422
+"Vampire Scrivener",5,"Creature - Vampire Warlock",B,"j25","505",uncommon,Black,Owned,,false,,,"","",
+"Vengeful Warchief",5,"Creature - Orc Warrior",B,"m20","121",uncommon,Black,Owned,,false,,,"","",73141
+"Goremand",6,"Creature - Demon",B,"j25","448",uncommon,Black,Not Owned,,false,,,"","",
+"Massacre Wurm",6,"Creature - Phyrexian Wurm",B,"fdn","714",mythic,Black,Owned,Non-foil,false,,,"","",
+"Archfiend of Sorrows",7,"Creature - Demon",B,"plst","MH2-74",uncommon,Black,Not Owned,,false,,,"","",
+"Huskburster Swarm",8,"Creature - Elemental Insect",B,"blb","98",uncommon,Black,Not Owned,,false,,,"","",129441
+"Songs of the Damned",1,"Instant",B,"ice","160",common,Black,Not Owned,,false,,,"","",
+"Stab",1,"Instant",B,"fdn","71",common,Black,Owned,,false,,,"","",133710
+"Undying Malice",1,"Instant",B,"fdn","528",common,Black,Owned,Non-foil,false,,,"","",
+"Moment of Craving",2,"Instant",B,"fdn","524",common,Black,Owned,Non-foil,false,,,"","",
+"Hero's Downfall",3,"Instant",B,"fdn","175",rare,Black,Owned,Non-foil,false,,,"","",133376
+"Tribute to Hunger",3,"Instant",B,"fdn","614",uncommon,Black,Owned,Non-foil,false,,,"","",
+"Clear the Stage",5,"Instant",B,"rna","68",uncommon,Black,Owned,,false,,,"","",71136
+"Duress",1,"Sorcery",B,"fdn","606",common,Black,Owned,Non-foil,false,,,"","",
+"Unearth",1,"Sorcery",B,"plst","ULG-72",common,Black,Not Owned,,false,,,"when-you-cycle;cycling","",
+"Dread Summons",2,"Sorcery",B,"fdn","604",rare,Black,Owned,Non-foil,false,,,"","",
+"Exsanguinate",2,"Sorcery",B,"fdn","173",uncommon,Black,Owned,Non-foil,false,,,"","",133372
+"Feed the Swarm",2,"Sorcery",B,"fdn","712",common,Black,Owned,Non-foil,false,,,"","",
+"Macabre Waltz",2,"Sorcery",B,"fdn","177",common,Black,Owned,,false,,,"","",133380
+"Necrotic Fumes",3,"Sorcery - Lesson",B,"stx","78",uncommon,Black,Owned,,false,,,"","",88633
+"Seeker's Folly",3,"Sorcery",B,"fdn","69",uncommon,Black,Owned,Non-foil,false,,,"","",133706
+"Sanguine Indulgence",4,"Sorcery",B,"fdn","613",common,Black,Owned,Non-foil,false,,,"","",
+"Zombify",4,"Sorcery",B,"fdn","187",uncommon,Black,Owned,Non-foil,false,,,"","",133400
+"Altar of Bhaal",2,"Artifact",B,"clb","109",rare,Black,Not Owned,,false,,,"","",
+"Vampiric Rites",1,"Enchantment",B,"fdn","615",uncommon,Black,Owned,Non-foil,false,,,"","",
+"No Rest for the Wicked",2,"Enchantment",B,"plst","10E-165",uncommon,Black,Not Owned,,false,,,"","",
+"Midnight Snack",3,"Enchantment",B,"fdn","65",uncommon,Black,Owned,Non-foil,false,,,"","",133698
+"Dragonmaster Outcast",1,"Creature - Human Shaman",R,"fdn","622",mythic,Red,Owned,Non-foil,false,,,"","",
+"Fanatical Firebrand",1,"Creature - Goblin Pirate",R,"fdn","195",common,Red,Owned,Non-foil,false,,,"","",133416
+"Flameblade Adept",1,"Creature - Jackal Warrior",R,"j22","131",uncommon,Red,Not Owned,,false,,,"","",
+"Frenzied Goblin",1,"Creature - Goblin Berserker",R,"fdn","199",uncommon,Red,Owned,,false,,,"","",133424
+"Ghitu Lavarunner",1,"Creature - Human Wizard",R,"fdn","623",common,Red,Owned,Non-foil,false,,,"","",
+"Rigging Runner",1,"Creature - Goblin Pirate",R,"j22","81",uncommon,Red,Owned,,false,,,"","",
+"Stromkirk Noble",1,"Creature - Vampire Noble",R,"fdn","632",rare,Red,Owned,Non-foil,false,,,"","",
+"Heartfire Immolator",2,"Creature - Human Wizard",R,"fdn","201",uncommon,Red,Owned,Non-foil,false,,,"","",133428
+"Scrapwork Mutt",2,"Artifact Creature - Dog",,"plst","BRO-164",common,Red,Not Owned,,false,,,"","",
+"Searslicer Goblin",2,"Creature - Goblin Warrior",R,"fdn","93",rare,Red,Owned,,false,,,"","",133754
+"Vengeful Devil",2,"Creature - Devil",R,"mh1","152",uncommon,Red,Owned,,false,,,"","",72676
+"Viashino Pyromancer",2,"Creature - Lizard Wizard",R,"fdn","634",common,Red,Owned,Non-foil,false,,,"","",
+"War-Name Aspirant",2,"Creature - Human Warrior",R,"j22","620",uncommon,Red,Not Owned,,false,,,"","",
+"Young Pyromancer",2,"Creature - Human Shaman",R,"j25","618",uncommon,Red,Not Owned,,false,,,"","",
+"Ball Lightning",3,"Creature - Elemental",R,"fdn","618",rare,Red,Owned,Non-foil,false,,,"","",
+"Bonecrusher Giant",3,"Creature - Giant",R,"plst","ELD-115",rare,Red,Not Owned,,false,,,"","",
+"Crackling Cyclops",3,"Creature - Cyclops Wizard",R,"fdn","83",common,Red,Owned,Non-foil,false,,,"","",133734
+"Devouring Hellion",3,"Creature - Hellion",R,"war","124",uncommon,Red,Owned,,false,,,"","",71854
+"Flamewake Phoenix",3,"Creature - Phoenix",R,"fdn","198",rare,Red,Not Owned,,false,,,"","",133422
+"Giant Cindermaw",3,"Creature - Dinosaur Beast",R,"fdn","624",uncommon,Red,Owned,Non-foil,false,,,"","",
+"Guttersnipe",3,"Creature - Goblin Shaman",R,"fdn","716",uncommon,Red,Owned,Non-foil,false,,,"","",
+"Irencrag Pyromancer",3,"Creature - Human Wizard",R,"j22","559",rare,Red,Not Owned,,false,,,"","",
+"Laelia, the Blade Reforged",3,"Legendary Creature - Spirit Warrior",R,"mh3","368",rare,Red,Owned,Non-foil,false,,,"","",125731
+"Mogg Mob",3,"Creature - Goblin",R,"mh3","127",uncommon,Red,Owned,,false,,,"","",126271
+"Shatterskull Charger",3,"Creature - Giant Warrior",R,"znr","159",rare,Red,Not Owned,,false,,,"kicker","",83293
+"Taurean Mauler",3,"Creature - Shapeshifter",R,"fdn","633",rare,Red,Owned,Non-foil,false,,,"","",
+"Battlesong Berserker",4,"Creature - Human Berserker",R,"fdn","78",uncommon,Red,Owned,,false,,,"","",133724
+"Brambleguard Captain",4,"Creature - Mouse Soldier",R,"blb","127",uncommon,Red,Owned,,false,,,"","",129499
+"Erratic Cyclops",4,"Creature - Cyclops Shaman",R,"c21","166",rare,Red,Owned,,false,,,"","",89433
+"Fledgling Dragon",4,"Creature - Dragon",R,"mh3","280",uncommon,Red,Not Owned,,false,,,"","",125971
+"Strongbox Raider",4,"Creature - Orc Pirate",R,"fdn","96",uncommon,Red,Owned,,false,,,"","",133760
+"Storm Fleet Arsonist",5,"Creature - Orc Pirate",R,"xln","162",uncommon,Red,Owned,,false,,,"","",65340
+"Twinflame Tyrant",5,"Creature - Dragon",R,"fdn","97",mythic,Red,Owned,,false,,,"","",133762
+"Oliphaunt",6,"Creature - Elephant",R,"ltr","426",common,Red,Not Owned,,false,,,"when-you-cycle;cycling","",111576
+"Sanctuary Smasher",6,"Creature - Rhino Beast",R,"iko","135",uncommon,Red,Not Owned,,false,,,"when-you-cycle;cycling","",80279
+"Hellkite Punisher",7,"Creature - Dragon",R,"m21","151",uncommon,Red,Owned,,false,,,"","",81529
+"Burst Lightning",1,"Instant",R,"fdn","192",common,Red,Owned,Non-foil,false,,,"kicker","",133410
+"Abrade",2,"Instant",R,"fdn","188",uncommon,Red,Owned,Non-foil,false,,,"","",133402
+"Cinderclasm",2,"Instant",R,"znr","136",uncommon,Red,Not Owned,,false,,,"kicker","",83245
+"Skycrash",2,"Instant",R,"dft","146",uncommon,Red,Not Owned,,false,,,"when-you-cycle;cycling","",136415
+"Thrill of Possibility",2,"Instant",R,"fdn","210",common,Red,Owned,Non-foil,false,,,"","",133446
+"Volcanic Geyser",2,"Instant",R,"plst","MIR-202",uncommon,Red,Owned,,false,,,"","",
+"Uncaged Fury",3,"Instant",R,"inr","177",uncommon,Red,Owned,,false,,,"","",135764
+"Vampires' Vengeance",3,"Instant",R,"moc","289",uncommon,Red,Owned,,false,,,"Bye","",111034
+"Bolt Bend",4,"Instant",R,"fdn","619",uncommon,Red,Owned,Non-foil,false,,,"Bye","",
+"Crash Through",1,"Sorcery",R,"fdn","620",common,Red,Owned,Non-foil,false,,,"","",
+"Goblin Negotiation",2,"Sorcery",R,"fdn","88",uncommon,Red,Owned,Non-foil,false,,,"","",133744
+"Obliterating Bolt",2,"Sorcery",R,"fdn","629",uncommon,Red,Owned,Non-foil,false,,,"","",
+"Light Up the Stage",3,"Sorcery",R,"dsc","166",uncommon,Red,Not Owned,,false,,,"","",130955
+"Repeating Barrage",3,"Sorcery",R,"xln","156",rare,Red,Not Owned,,false,,,"","",65328
+"Slice and Dice",6,"Sorcery",R,"cmm","255",uncommon,Red,Not Owned,,false,,,"when-you-cycle;cycling","",114737
+"Pyromancer's Goggles",5,"Legendary Artifact",R,"fdn","677",mythic,Red,Owned,Non-foil,false,,,"","",
+"Impact Tremors",2,"Enchantment",R,"fdn","717",common,Red,Owned,Non-foil,false,,,"","",
+"Tectonic Reformation",2,"Enchantment",R,"c20","162",rare,Red,Not Owned,,false,,,"when-you-cycle;cycling","",
+"Impending Doom",3,"Enchantment - Aura",R,"j22","557",uncommon,Red,Owned,,false,,,"","",
+"Warhost's Frenzy",3,"Instant",R,"dmu","151",uncommon,Red,Not Owned,,false,,,"kicker","",102778
+"Imodane's Recruiter",3,"Creature - Human Knight",R,"woe","229",uncommon,Red,Not Owned,,false,,,"","",116820
+"Llanowar Elves",1,"Creature - Elf Druid",G,"fdn","227",common,Green,Owned,Non-foil,false,,,"","",133480
+"Wildwood Scourge",1,"Creature - Hydra",G,"fdn","236",uncommon,Green,Owned,Non-foil,false,,,"","",133498
+"Bramble Familiar",2,"Creature - Elemental Raccoon",G,"woe","164",rare,Green,Not Owned,,false,,,"","",116662
+"Dwynen's Elite",2,"Creature - Elf Warrior",G,"fdn","218",uncommon,Green,Owned,Non-foil,false,,,"","",133462
+"Fynn, the Fangbearer",2,"Legendary Creature - Human Warrior",G,"fdn","637",uncommon,Green,Owned,Non-foil,false,,,"","",
+"Gempalm Strider",2,"Creature - Elf",G,"evg","6",uncommon,Green,Not Owned,,false,,,"when-you-cycle;cycling","",
+"Nessian Hornbeetle",2,"Creature - Insect",G,"fdn","229",uncommon,Green,Owned,,false,,,"","",133484
+"Thornweald Archer",2,"Creature - Elf Archer",G,"fdn","559",common,Green,Owned,Non-foil,false,,,"","",
+"Venom Connoisseur",2,"Creature - Human Druid",G,"fdn","648",uncommon,Green,Owned,Non-foil,false,,,"","",
+"Wary Thespian",2,"Creature - Cat Druid",G,"fdn","235",common,Green,Owned,,false,,,"","",133496
+"Werebear",2,"Creature - Human Bear Druid",G,"plst","ODY-282",common,Green,Not Owned,,false,,,"","",
+"Wildborn Preserver",2,"Creature - Elf Archer",G,"fdn","650",rare,Green,Owned,Non-foil,false,,,"","",
+"Ambush Wolf",3,"Creature - Wolf",G,"fdn","98",common,Green,Owned,,false,,,"","",133764
+"Fierce Empath",3,"Creature - Elf",G,"fdn","636",common,Green,Owned,Non-foil,false,,,"","",
+"Hornbash Mentor",3,"Creature - Human Warrior",G,"iko","159",uncommon,Green,Owned,,false,,,"","",80327
+"Imperious Perfect",3,"Creature - Elf Warrior",G,"fdn","719",uncommon,Green,Owned,Non-foil,false,,,"","",
+"Predator Ooze",3,"Creature - Ooze",G,"fdn","642",rare,Green,Owned,Non-foil,false,,,"","",
+"Reclamation Sage",3,"Creature - Elf Shaman",G,"fdn","231",uncommon,Green,Owned,Non-foil,false,,,"","",133488
+"Springbloom Druid",3,"Creature - Elf Druid",G,"fdn","646",common,Green,Owned,Non-foil,false,,,"","",
+"Cackling Prowler",4,"Creature - Hyena Rogue",G,"fdn","101",common,Green,Owned,,false,,,"","",133770
+"Elvish Regrower",4,"Creature - Elf Druid",G,"fdn","104",uncommon,Green,Owned,Non-foil,false,,,"","",133776
+"Enraged Ceratok",4,"Creature - Rhino",G,"clu","162",uncommon,Green,Owned,,false,,,"","",123108
+"Gnarlback Rhino",4,"Creature - Rhino",G,"fdn","638",uncommon,Green,Owned,Non-foil,false,,,"","",
+"Gruul Beastmaster",4,"Creature - Human Shaman",G,"rna","129",uncommon,Green,Owned,,false,,,"","",71258
+"Surrak, the Hunt Caller",4,"Legendary Creature - Human Warrior",G,"fdn","647",rare,Green,Owned,Non-foil,false,,,"","",
+"Territorial Allosaurus",4,"Creature - Dinosaur",G,"dom","184",rare,Green,Not Owned,,false,,,"kicker","",67833
+"Treetop Snarespinner",4,"Creature - Spider",G,"fdn","114",common,Green,Owned,,false,,,"","",133796
+"Vizier of the Menagerie",4,"Creature - Snake Cleric",G,"fdn","649",mythic,Green,Owned,Non-foil,false,,,"","",
+"Elfsworn Giant",5,"Creature - Giant",G,"fdn","103",common,Green,Owned,,false,,,"","",133774
+"Heroes' Bane",5,"Creature - Hydra",G,"fdn","639",rare,Green,Owned,Non-foil,false,,,"","",
+"Generous Ent",6,"Creature - Treefolk",G,"ltr","169",common,Green,Not Owned,,false,,,"when-you-cycle;cycling","",112248
+"Rampaging Baloths",6,"Creature - Beast",G,"fdn","645",mythic,Green,Owned,Non-foil,false,,,"","",
+"Krosan Tusker",7,"Creature - Boar Beast",G,"j25","681",uncommon,Green,Not Owned,,false,,,"when-you-cycle;cycling","",
+"Pelakka Wurm",7,"Creature - Wurm",G,"fdn","720",uncommon,Green,Owned,Non-foil,false,,,"","",
+"Giant Growth",1,"Instant",G,"fdn","223",common,Green,Owned,Non-foil,false,,,"","",133472
+"Might of the Masses",1,"Instant",G,"j25","689",uncommon,Green,Owned,,false,,,"","",
+"Snakeskin Veil",1,"Instant",G,"fdn","233",common,Green,Owned,Non-foil,false,,,"","",133492
+"Bite Down",2,"Instant",G,"fdn","212",common,Green,Owned,Non-foil,false,,,"","",133450
+"Dissenter's Deliverance",2,"Instant",G,"plst","AKH-164",common,Green,Not Owned,,false,,,"when-you-cycle;cycling","",
+"Primal Might",1,"Sorcery",G,"fdn","643",rare,Green,Owned,Non-foil,false,,,"","",
+"Charge of the Forever-Beast",3,"Sorcery",G,"iko","147",uncommon,Green,Owned,,false,,,"","",80303
+"Circuitous Route",4,"Sorcery",G,"fdn","635",uncommon,Green,Owned,Non-foil,false,,,"","",
+"Monstrous Step",5,"Sorcery",G,"iko","166",uncommon,Green,Owned,,false,,,"cycling","",80341
+"Overrun",5,"Sorcery",G,"fdn","230",uncommon,Green,Owned,Non-foil,false,,,"","",133486
+"Nissa's Renewal",6,"Sorcery",G,"c21","201",rare,Green,Owned,,false,,,"","",89503
+"Wolfrider's Saddle",4,"Artifact - Equipment",G,"j25","740",uncommon,Green,Owned,,false,,,"","",
+"Ordeal of Nylea",2,"Enchantment - Aura",G,"fdn","641",uncommon,Green,Owned,Non-foil,false,,,"","",
+"Garruk's Uprising",3,"Enchantment",G,"fdn","220",uncommon,Green,Owned,Non-foil,false,,,"","",133466
+"Primeval Bounty",6,"Enchantment",G,"fdn","644",mythic,Green,Owned,Non-foil,false,,,"","",
+"Colossal Growth",2,"Instant",G,"dmu","158",common,Green,Not Owned,,false,,,"kicker","",102792
+"Bog Badger",3,"Creature - Badger",G,"dmu","156",common,Green,Not Owned,,false,,,"kicker","",102788
+"Elvish Hydromancer",3,"Creature - Elf Wizard",G,"dmu","162",uncommon,Green,Not Owned,,false,,,"kicker","",102800
+"Diamond Mare",2,"Artifact Creature - Horse",,"fdn","672",uncommon,Colorless,Owned,Non-foil,false,,,"","",
+"Three Tree Mascot",2,"Artifact Creature - Shapeshifter",,"fdn","682",common,Colorless,Owned,Non-foil,false,,,"","",
+"Burnished Hart",3,"Artifact Creature - Elk",,"fdn","250",uncommon,Colorless,Owned,Non-foil,false,,,"","",133526
+"Expedition Map",1,"Artifact",,"fdn","724",common,Colorless,Owned,Non-foil,false,,,"","",
+"Soul-Guide Lantern",1,"Artifact",,"fdn","680",uncommon,Colorless,Owned,Non-foil,false,,,"","",
+"Mazemind Tome",2,"Artifact",,"fdn","676",rare,Colorless,Owned,Non-foil,false,,,"","",
+"Ravenous Amulet",2,"Artifact",,"fdn","131",uncommon,Colorless,Owned,Non-foil,false,,,"","",133830
+"Swiftfoot Boots",2,"Artifact - Equipment",,"fdn","258",uncommon,Colorless,Owned,Non-foil,false,,,"","",133542
+"Fireshrieker",3,"Artifact - Equipment",,"fdn","674",uncommon,Colorless,Owned,Non-foil,false,,,"","",
+"Heraldic Banner",3,"Artifact",,"fdn","254",uncommon,Colorless,Owned,Non-foil,false,,,"","",133534
+"Hedron Archive",4,"Artifact",,"fdn","726",uncommon,Colorless,Owned,Non-foil,false,,,"","",
+"Gilded Lotus",5,"Artifact",,"fdn","725",rare,Colorless,Owned,Non-foil,false,,,"","",
+"Empyrean Eagle",3,"Creature - Bird Spirit",UW,"fdn","239",uncommon,Multicolored,Owned,Non-foil,false,,,"","",133504
+"Vega, the Watcher",3,"Legendary Creature - Bird Spirit",UW,"khm","233",uncommon,Multicolored,Not Owned,,false,,,"","",87809
+"Azorius Skyguard",6,"Creature - Human Knight",UW,"rna","155",uncommon,Multicolored,Owned,,false,,,"","",71310
+"Cruel Somnophage",2,"Creature - Nightmare",B,"woe","222",rare,Multicolored,Not Owned,,false,,,"","",116792
+"Devourer of Memory",2,"Creature - Nightmare",BU,"thb","213",uncommon,Multicolored,Owned,,false,,,"","",79550
+"Dreadwing Scavenger",3,"Creature - Nightmare Bird",BU,"fdn","118",uncommon,Multicolored,Owned,Non-foil,false,,,"","",133804
+"Judith, the Scourge Diva",3,"Legendary Creature - Human Shaman",BR,"cmm","341",uncommon,Multicolored,Not Owned,,false,,,"","",114911
+"Perforating Artist",3,"Creature - Devil",BR,"fdn","124",uncommon,Multicolored,Owned,Non-foil,false,,,"","",133816
+"Stormclaw Rager",3,"Creature - Ogre Warrior",BR,"mom","254",uncommon,Multicolored,Owned,,false,,,"","",110422
+"Garna, Bloodfist of Keld",4,"Legendary Creature - Human Berserker",BR,"fdn","658",uncommon,Multicolored,Owned,Non-foil,false,,,"","",
+"Clan Guildmage",2,"Creature - Human Shaman",GR,"rna","162",uncommon,Multicolored,Owned,,false,,,"","",71324
+"Ruby, Daring Tracker",2,"Legendary Creature - Human Scout",GR,"fdn","245",uncommon,Multicolored,Owned,Non-foil,false,,,"","",133516
+"Halana and Alena, Partners",4,"Legendary Creature - Human Ranger",GR,"fdn","659",rare,Multicolored,Owned,Non-foil,false,,,"","",
+"Dryad Militant",1,"Creature - Dryad Soldier",GW,"fdn","656",uncommon,Multicolored,Owned,Non-foil,false,,,"","",
+"Conclave Mentor",2,"Creature - Centaur Cleric",GW,"m21","216",uncommon,Multicolored,Not Owned,,false,,,"","",81659
+"Wilt-Leaf Liege",4,"Creature - Elf Knight",GW,"fdn","668",rare,Multicolored,Owned,Non-foil,false,,,"","",
+"Elas il-Kor, Sadistic Pilgrim",2,"Legendary Creature - Phyrexian Kor Cleric",BW,"dmu","297",uncommon,Multicolored,Not Owned,,false,,,"","",
+"Priest of Fell Rites",2,"Creature - Human Warlock",BW,"mh2","208",rare,Multicolored,Not Owned,,false,,,"","",90793
+"Mortify",3,"Instant",BW,"fdn","662",uncommon,Multicolored,Owned,Non-foil,false,,,"","",
+"Fiendish Panda",4,"Creature - Bear Demon",BW,"fdn","120",uncommon,Multicolored,Owned,Non-foil,false,,,"","",133808
+"Balmor, Battlemage Captain",2,"Legendary Creature - Bird Wizard",RU,"fdn","237",uncommon,Multicolored,Not Owned,,false,,,"","",133500
+"Stormcatch Mentor",2,"Creature - Otter Wizard",RU,"blb","234",uncommon,Multicolored,Not Owned,,false,,,"","",129713
+"Teach by Example",2,"Instant",RU,"fdn","666",common,Multicolored,Owned,Non-foil,false,,,"","",
+"Enigma Drake",3,"Creature - Drake",RU,"fdn","657",uncommon,Multicolored,Owned,Non-foil,false,,,"","",
+"Protean Raider",3,"Creature - Shapeshifter Pirate",RU,"rix","167",rare,Multicolored,Not Owned,,false,,,"","",66795
+"Ovika, Enigma Goliath",7,"Legendary Creature - Phyrexian Nightmare",RU,"fdn","663",rare,Multicolored,Owned,Non-foil,false,,,"","",
+"Deadly Brew",2,"Sorcery",BG,"fdn","654",uncommon,Multicolored,Owned,Non-foil,false,,,"","",
+"Wardens of the Cycle",4,"Creature - Elf Warlock",BG,"fdn","125",uncommon,Multicolored,Owned,Non-foil,false,,,"","",133818
+"Vulturous Zombie",5,"Creature - Plant Zombie",BG,"cm2","170",rare,Multicolored,Owned,,false,,,"","",
+"Boros Charm",2,"Instant",RW,"fdn","721",uncommon,Multicolored,Owned,Non-foil,false,,,"","",
+"Heroic Reinforcements",4,"Sorcery",RW,"fdn","241",uncommon,Multicolored,Owned,Non-foil,false,,,"","",133508
+"Aurelia, the Warleader",6,"Legendary Creature - Angel",RW,"fdn","651",mythic,Multicolored,Owned,Non-foil,false,,,"Bye","",
+"Clement, the Worrywort",3,"Legendary Creature - Frog Druid",GU,"blb","209",rare,Multicolored,Not Owned,,false,,,"","",129663
+"Trygon Predator",3,"Creature - Beast",GU,"fdn","667",uncommon,Multicolored,Owned,Non-foil,false,,,"","",
+"Tatyova, Benthic Druid",5,"Legendary Creature - Merfolk Druid",GU,"fdn","247",uncommon,Multicolored,Owned,Non-foil,false,,,"","",133520
+"Ramos, Dragon Engine",6,"Legendary Artifact Creature - Dragon",BGRUW,"fdn","678",mythic,Multicolored,Owned,Non-foil,false,,,"","",
+"Azorius Guildgate",0,"Land - Gate",UW,"fdn","683",common,Lands,Owned,Non-foil,false,,,"","",
+"Temple of Enlightenment",0,"Land",UW,"fdn","698",rare,Lands,Owned,Non-foil,false,,,"","",
+"Tranquil Cove",0,"Land",UW,"fdn","270",common,Lands,Owned,Non-foil,false,,,"","",133566
+"Tranquil Cove",0,"Land",UW,"fdn","270",common,Lands,Owned,Non-foil,false,,,"","",133566
+"Dimir Guildgate",0,"Land - Gate",BU,"fdn","688",common,Lands,Owned,Non-foil,false,,,"","",
+"Dismal Backwater",0,"Land",BU,"fdn","261",common,Lands,Owned,Non-foil,false,,,"","",133548
+"Dismal Backwater",0,"Land",BU,"fdn","261",common,Lands,Owned,Non-foil,false,,,"","",133548
+"Temple of Deceit",0,"Land",BU,"fdn","697",rare,Lands,Owned,Non-foil,false,,,"","",
+"Bloodfell Caves",0,"Land",BR,"fdn","259",common,Lands,Owned,Non-foil,false,,,"","",133544
+"Bloodfell Caves",0,"Land",BR,"fdn","259",common,Lands,Owned,Non-foil,false,,,"","",133544
+"Rakdos Guildgate",0,"Land - Gate",BR,"fdn","693",common,Lands,Owned,Non-foil,false,,,"","",
+"Temple of Malice",0,"Land",BR,"fdn","701",rare,Lands,Owned,Non-foil,false,,,"","",
+"Gruul Guildgate",0,"Land - Gate",GR,"fdn","690",common,Lands,Owned,Non-foil,false,,,"","",
+"Rugged Highlands",0,"Land",GR,"fdn","265",common,Lands,Owned,Non-foil,false,,,"","",133556
+"Rugged Highlands",0,"Land",GR,"fdn","265",common,Lands,Owned,Non-foil,false,,,"","",133556
+"Temple of Abandon",0,"Land",GR,"fdn","696",rare,Lands,Owned,Non-foil,false,,,"","",
+"Blossoming Sands",0,"Land",GW,"fdn","260",common,Lands,Owned,Non-foil,false,,,"","",133546
+"Blossoming Sands",0,"Land",GW,"fdn","260",common,Lands,Owned,Non-foil,false,,,"","",133546
+"Selesnya Guildgate",0,"Land - Gate",GW,"fdn","694",common,Lands,Owned,Non-foil,false,,,"","",
+"Temple of Plenty",0,"Land",GW,"fdn","703",rare,Lands,Owned,Non-foil,false,,,"","",
+"Orzhov Guildgate",0,"Land - Gate",BW,"fdn","692",common,Lands,Owned,Non-foil,false,,,"","",
+"Scoured Barrens",0,"Land",BW,"fdn","266",common,Lands,Owned,Non-foil,false,,,"","",133558
+"Scoured Barrens",0,"Land",BW,"fdn","266",common,Lands,Owned,Non-foil,false,,,"","",133558
+"Temple of Silence",0,"Land",BW,"fdn","704",rare,Lands,Owned,Non-foil,false,,,"","",
+"Izzet Guildgate",0,"Land - Gate",RU,"fdn","691",common,Lands,Owned,Non-foil,false,,,"","",
+"Swiftwater Cliffs",0,"Land",RU,"fdn","268",common,Lands,Owned,Non-foil,false,,,"","",133562
+"Swiftwater Cliffs",0,"Land",RU,"fdn","268",common,Lands,Owned,Non-foil,false,,,"","",133562
+"Temple of Epiphany",0,"Land",RU,"fdn","699",rare,Lands,Owned,Non-foil,false,,,"","",
+"Golgari Guildgate",0,"Land - Gate",BG,"fdn","689",common,Lands,Owned,Non-foil,false,,,"","",
+"Jungle Hollow",0,"Land",BG,"fdn","263",common,Lands,Owned,Non-foil,false,,,"","",133552
+"Jungle Hollow",0,"Land",BG,"fdn","263",common,Lands,Owned,Non-foil,false,,,"","",133552
+"Temple of Malady",0,"Land",BG,"fdn","700",rare,Lands,Owned,Non-foil,false,,,"","",
+"Boros Guildgate",0,"Land - Gate",RW,"fdn","684",common,Lands,Owned,Non-foil,false,,,"","",
+"Temple of Triumph",0,"Land",RW,"fdn","705",rare,Lands,Owned,Non-foil,false,,,"","",
+"Wind-Scarred Crag",0,"Land",RW,"fdn","271",common,Lands,Owned,Non-foil,false,,,"","",133568
+"Wind-Scarred Crag",0,"Land",RW,"fdn","271",common,Lands,Owned,Non-foil,false,,,"","",133568
+"Simic Guildgate",0,"Land - Gate",GU,"fdn","695",common,Lands,Owned,Non-foil,false,,,"","",
+"Temple of Mystery",0,"Land",GU,"fdn","702",rare,Lands,Owned,Non-foil,false,,,"","",
+"Thornwood Falls",0,"Land",GU,"fdn","269",common,Lands,Owned,Non-foil,false,,,"","",133564
+"Thornwood Falls",0,"Land",GU,"fdn","269",common,Lands,Owned,Non-foil,false,,,"","",133564
+"Tranquil Landscape",0,"Land",,"mh3","520",common,Lands,Not Owned,,false,,,"when-you-cycle;cycling","",
+"Contaminated Landscape",0,"Land",,"mh3","218",common,Lands,Not Owned,,false,,,"when-you-cycle;cycling","",126455
+"Seething Landscape",0,"Land",,"mh3","225",common,Lands,Not Owned,,false,,,"when-you-cycle;cycling","",126469
+"Twisted Landscape",0,"Land",,"mh3","521",common,Lands,Not Owned,,false,,,"when-you-cycle;cycling","",
+"Sheltering Landscape",0,"Land",,"mh3","227",common,Lands,Not Owned,,false,,,"when-you-cycle;cycling","",126473
+"Shattered Landscape",0,"Land",,"mh3","226",common,Lands,Not Owned,,false,,,"when-you-cycle;cycling","",126471
+"Bountiful Landscape",0,"Land",,"mh3","217",common,Lands,Not Owned,,false,,,"when-you-cycle;cycling","",126453
+"Deceptive Landscape",0,"Land",,"mh3","219",common,Lands,Not Owned,,false,,,"when-you-cycle;cycling","",126457
+"Perilous Landscape",0,"Land",,"mh3","223",common,Lands,Not Owned,,false,,,"when-you-cycle;cycling","",126465
+"Foreboding Landscape",0,"Land",,"mh3","221",common,Lands,Not Owned,,false,,,"when-you-cycle;cycling","",126461
+"Ash Barrens",0,"Land",,"drc","147",common,Lands,Not Owned,,false,,,"when-you-cycle;cycling","",137471

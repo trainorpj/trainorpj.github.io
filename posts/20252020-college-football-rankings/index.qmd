@@ -1,0 +1,254 @@
+---
+title: "College Football Rankings"
+date: "2025-02-20"
+categories: [quick-and-dirty]
+format:
+  html:
+    code-fold: true
+---
+
+This is a [quick-and-dirty](../meta/quick-and-dirty/index.qmd) implementation and extension of Fiddler on the Proof's [Reasonable Rankings for College Football](https://thefiddler.substack.com/p/reasonable-rankings-for-college-football). 
+
+## Data 
+
+You can skip this part if you'd like.
+
+```{python}
+from  types import SimpleNamespace
+
+import pandas as pd
+import duckdb
+import numpy as np
+
+import requests
+from bs4 import BeautifulSoup
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+url = "https://www.sports-reference.com/cfb/years/2024-schedule.html#schedule"
+
+response = requests.get(url)
+
+soup = BeautifulSoup(response.content)
+
+# Find the table (inspect the webpage to find the correct table tag and attributes)
+table = soup.find("table", id="schedule")
+
+# use these table headers
+headers = [
+    "week",
+    "date",
+    "time",
+    "day",
+    "winner",
+    "winner_points",
+    "home",
+    "loser",
+    "loser_points",
+    "notes"
+]
+
+# Extract table rows
+rows = []
+for tr in table.find("tbody").find_all("tr"):
+    row = []
+    for td in tr.find_all("td"):
+        row.append(td.text)
+    rows.append(row)
+
+# Create pandas DataFrame
+scores_raw = (
+    pd.DataFrame(rows, columns=headers)
+    .dropna(subset=["week"])
+)
+scores_raw.iloc[0]
+```
+
+Cleanup.
+
+```{python}
+scores = duckdb.query("""
+with scores as (
+  select
+    row_number() over() as game_id
+    , trim(regexp_replace(winner, '(\(\d+\))', '')) as winner
+    , trim(regexp_replace(loser, '(\(\d+\))', '')) as loser
+    , cast(coalesce(nullif(winner_points, ''), '0') as int) as winner_points
+    , cast(coalesce(nullif(loser_points, ''), '0') as int) as loser_points
+  from scores_raw
+  where 1=1 and week is not null
+)
+select
+  *
+  , loser_points
+  , winner_points - loser_points as diff_points
+from scores
+where 1=1 
+    and winner_points + loser_points > 0
+""")
+
+duckdb.query("select * from scores limit 4")
+```
+
+Make the game matrix. We'll discuss this later.
+
+```{python}
+teams = duckdb.query("""
+with teams as (
+  select distinct winner as team
+  from scores
+  union all
+  select distinct loser as team
+  from scores
+)
+select team
+from teams
+order by team
+""")
+
+team_mapping = {team: i for i, team in enumerate(teams.to_df()['team']) }
+
+game_matrix = np.zeros((scores.shape[0], teams.shape[0]))
+for i, row in scores.to_df().iterrows():
+  game_matrix[i, team_mapping[row['winner']]] = 1
+  game_matrix[i, team_mapping[row['loser']]] = -1
+
+game_matrix.shape
+```
+
+## What's a game worth?
+
+To simplify the modeling, we want to map a score-differential to a weight between 0 and 1. This is the function they recommend. It accepts the number of points the winners won by (i.e. a positive number) and returns a weight between 0 and 1 (1 is better than 0).
+
+```{python}
+#| code-fold: false
+def weigh(points_won_by, alpha=1):
+  return (2 / (1+np.exp(-points_won_by / alpha))) - 1
+```
+
+There has a tunable parameter, `alpha`, which means we can decide how to weigh different wins, e.g.
+- when `alpha=0`, "a win is a win," so a team that wins by 1 point is just as good as a team that wins by 14 points
+- when `alpha=5`, a team that wins by 1 point doesn't get a strong weight (closer to 0), while a team that wins by 14 points gets a weight of ~0.8.
+
+As `alpha` increases, teams need larger point differentials to do well. 
+
+```{python}
+pd.concat([
+  pd.DataFrame({"Won By": np.arange(0, 2*7)})\
+    .assign(alpha=a)\
+    .assign(Weight=lambda df: weigh(df["Won By"], alpha=a))
+  for a in [0, 1, 2, 5]
+  ], ignore_index=True)\
+  .pipe(lambda df: sns.relplot(data=df, x="Won By", y="Weight", hue="alpha", kind="line"))
+```
+
+So what `alpha` should we choose? I would work backwards from a score, e.g. "a 14-point (2 touchdowns) win is a decisive win." If we look at the distribution of points the winner won by, we see 14 points is the median, so that's a decent sanity check.
+
+```{python}
+sns.displot(data=scores.to_df(), x="diff_points", kind="ecdf")
+```
+
+Using our eyeballs, the plot above shows `alpha=2` is a reasonable parameter. Here's where all the weights would land:
+
+> The plot on the left is the `diff_score -> weight` mapping, and the plot on the right is a flipped ecdf of the resulting weights, so the ecdf is actually on the x-axis.
+
+```{python}
+# I use SimpleNamespace to keep things tidy.
+wex = SimpleNamespace()
+
+wex.fig, wex.ax = plt.subplots(1, 2)
+
+wex.data = scores.to_df().assign(weight=lambda df: weigh(df.diff_points, alpha=2))
+
+sns.lineplot(x=wex.data.diff_points, y=wex.data.weight, ax=wex.ax[0])
+sns.ecdfplot(y=wex.data.weight, ax=wex.ax[1])
+```
+
+## Ranking the Teams
+
+With this we can set up a linear equation:
+
+```
+games_matrix * team_weights = game_weights
+^known^^^^^^   ^unknown^^^^   ^known^^^^^^        
+```
+
+We can test our assumptions about shapes and content here: 
+
+```{python}
+#| code-fold: false
+num_games = scores.shape[0]
+num_teams = teams.shape[0]
+
+assert game_matrix.shape == (num_games, num_teams)
+assert (game_matrix==1).sum() == num_games # winners get a 1
+assert (game_matrix==-1).sum() == num_games # losers get a -1
+
+example_game_weights = weigh(scores.to_df().diff_points, 2)
+assert example_game_weights.shape == (num_games,)
+assert ((example_game_weights>=0) & (example_game_weights<=1)).sum() == num_games # values between 0 and 1
+```
+
+Now we can solve this equation. Once we have `team_weights`, we can pull the top 12 to get our finalists.
+
+```{python}
+def solve_for_team_weights(games, weights, teams=teams):
+  pseudoinverse = np.linalg.pinv(games)
+  rankings = pseudoinverse @ np.array(weights)
+
+  return pd.Series({
+      team: rankings[i]
+      for i, team in enumerate(teams.to_df()['team'])
+  })
+
+rankings = solve_for_team_weights(
+  game_matrix, 
+  weigh(scores.to_df().diff_points, 2),
+  teams
+)
+
+# get top 12
+rankings.sort_values(ascending=False).head(12)
+```
+
+## Sensitivity
+
+I'm curious how changing `alpha` changes the top-12 composition. Recall that increasing `alpha` means we weigh bigger score differentials more heavily. 
+
+As we increase alpha, we see that:
+
+- Ohio State is always #1
+- Alabama makes it for alpha>2
+- The higher (i.e. worse) seeds are slightly more competitive
+- Miami gets in at `alpha~=12`
+
+
+```{python}
+sens = SimpleNamespace()
+sens.data = []
+sens.fig, sens.ax = plt.subplots()
+
+for a in np.linspace(0, 20, 11):
+  sens.tw = (
+    solve_for_team_weights(
+      game_matrix,
+      weigh(scores.to_df().diff_points, a),
+      teams
+    )
+    .sort_values(ascending=False)
+    .head(12)
+    # I don't like pandas
+    .reset_index().rename(columns={"index": "team", 0: "team_score"})
+    .assign(alpha=np.round(a), seed=lambda df: df.index+1)
+  )
+  sens.data.append(sens.tw)
+
+(
+  pd.concat(sens.data, ignore_index=True)
+  .pivot(index="team", columns="alpha", values="seed")
+  # sort by avg rank
+  .pipe(lambda df: df.loc[df.max(axis=1).sort_values().index])
+  .pipe(lambda df: sns.heatmap(df, annot=True, ax=sens.ax))
+)
+```

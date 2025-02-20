@@ -1,0 +1,12 @@
+{
+  "hash": "d8eb29ec1d175ca918d3bafbdbcabc61",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Quick and Dirty\"\ndate: \"2025-02-19\"\ncategories: [meta]\njupyter: python3\n---\n\n\nSome posts will have the \"quick-and-dirty\" tag. These are meant to communicate an idea quickly. These are written (and coded) in a stream-of-conciousness fashion, and they're mostly a tool for me to get things done.\n\nProfessionally, I think most of my work is quick-and-dirty. If my manager asks for a quick analysis, I want to get them accurate results as quickly as possible. Nobody cares how clean/reusable my code is if nobody is sees it. Most of the time, cleaning up you python/SQL/whatever is not worth the effort.\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
