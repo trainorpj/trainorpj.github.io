@@ -39,3 +39,10 @@ Mana curves:
 )
 ```
 
+Cards I own:
+
+
+```{python}
+cube.query("select status, count(*) as num from cards group by status")
+```
+
