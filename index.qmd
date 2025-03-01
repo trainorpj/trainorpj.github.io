@@ -1,5 +1,5 @@
 ---
-title: "PJs Blog"
+title: "Posts"
 listing:
   contents: posts
   sort: "date desc"
@@ -10,5 +10,3 @@ listing:
 page-layout: full
 title-block-banner: true
 ---
-
-My background is in computational statistics, simulation, and software. I write about those things and more. 

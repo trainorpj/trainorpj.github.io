@@ -1,0 +1,6 @@
+---
+title: "About"
+format: html
+---
+
+My background is in computational statistics. I write when I can.

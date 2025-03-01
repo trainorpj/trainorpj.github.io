@@ -7,7 +7,7 @@ format:
     code-fold: true
 ---
 
-This is a [quick-and-dirty](../meta/quick-and-dirty/index.qmd) implementation and extension of Fiddler on the Proof's [Reasonable Rankings for College Football](https://thefiddler.substack.com/p/reasonable-rankings-for-college-football). 
+This is a [quick-and-dirty](../meta/quick-and-dirty/index.qmd) implementation and extension of Fiddler on the Proof's [Reasonable Rankings for College Football](https://thefiddler.substack.com/p/reasonable-rankings-for-college-football), which proposes a mathematical way to pick the bracket for the NCAA Football Championship.
 
 ## Data 
 
