@@ -1,0 +1,141 @@
+---
+title: "Simulating MTG Mana Problems"
+format: html
+draft: true
+---
+
+
+```{python}
+import pandas as pd
+import duckdb
+import numpy as np
+import plotnine as pn
+```
+
+
+Here's an example hand from a shuffled deck. 
+
+```{python}
+def make_deck():
+    deck = ["Land" for _ in range(17)]
+    deck.extend(["Spell" for _ in range(23)])
+    np.random.shuffle(deck)
+    return deck
+
+def get_counts(cards):
+    return pd.Series(cards).value_counts()
+
+# example first hand
+get_counts(make_deck()[:7])
+```
+
+
+How many lands should we expect to have in our opening hand? We could model this with a hypergeometric distribution, but I don't like that simulation very much ... simulation to the rescue!
+
+It looks like ~50% of the time we have 3 or 4 lands, which is the ideal number.
+
+```{python}
+num_sim = 101
+opening_hands = (
+    pd.DataFrame({
+        i: get_counts(make_deck()[:7])
+        for i in range(num_sim)
+    })
+    .T
+    .fillna(0)
+)
+
+(
+    pn.ggplot(data=opening_hands) +
+    pn.stat_ecdf(pn.aes("Land"))
+)
+```
+
+Suppose you decide to keep any hand, e.g. one with 2 lands and 5 spells. You'll draw a card each turn, so how many lands should you expect to get?
+
+
+```{python}
+def get_turn_counts(deck, num_start=7, num_draws=6):
+    counts = {
+        i: get_counts(deck[:(num_start+i)])
+        for i in range(num_draws+1)
+    }
+    return (
+        pd.DataFrame(counts).T
+        .reset_index(names=["draw"])
+        .fillna(0)
+    )
+
+# example
+get_turn_counts(make_deck())
+```
+
+Now let's simulate many draws. We can see:
+
+- Our turn 0 results hold; ~50% of the time you have 3-4 lands (good), ~35% of the time you have 2 or fewer Lands (bad).
+- By your 2nd draw, ~60% of the time you've drawn 3-5 lands, and there's a 15% chance you've only drawn 2 or fewer lands.
+
+```{python}
+draw_sims = (
+    pd.concat([
+        get_turn_counts(make_deck()).assign(sim_id=i)
+        for i in range(num_sim)
+    ], ignore_index=True)
+)
+
+(
+    duckdb.sql("""
+    select 
+        draw
+        , Land
+        , count(*) as num
+        , SUM(COUNT(*)) OVER (partition by draw) as num_draws
+        , num / num_draws AS draw_frac
+    from draw_sims 
+    group by draw, Land
+    order by draw
+    """)
+    .to_df()
+    .pipe(pn.ggplot)
+    + pn.geom_tile(pn.aes("draw", "Land", fill="draw_frac"))
+    + pn.geom_text(pn.aes("draw", "Land", label="round(draw_frac, 2)"))
+    + pn.scale_fill_continuous(cmap_name="Blues")
+    + pn.labs(y="total lands drawn", x="draw")
+)
+```
+
+
+```{python}
+(
+    pn.ggplot(draw_sims)
+    + pn.stat_ecdf(pn.aes("Land"))
+    + pn.facet_wrap("draw", labeller="label_both")
+    + pn.labs(title="Total Lands Drawn")
+)
+```
+
+## Mulligans
+
+You have the option to "mulligan" your opening hand, e.g. you can shuffle, re-draw 7 cards, then put one on the bottom of your deck.
+
+You can do this several times, but you probably shouldn't go lower than 5.
+
+
+```{python}
+def make_deck_with_mulligan(
+    num_start=7, 
+    num_mulligans=2,
+    keep_bounds=(3,4)
+):
+    while num_mulligans > 0:
+        deck = make_deck()
+        # mulligan check
+        counts = get_counts(deck[:num_start])
+        # TODO discard spells
+        if keep_bounds[0] <= counts.Land <= keep_bounds[1]:
+            return deck
+        num_mulligans -= 1
+    return deck
+
+make_deck_with_mulligan()
+```
