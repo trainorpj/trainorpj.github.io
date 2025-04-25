@@ -18,6 +18,7 @@ format:
       - litera
       - brand
     css: styles.css
+    code-fold: true
 
 
 
