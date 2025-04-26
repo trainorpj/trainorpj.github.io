@@ -1,0 +1,198 @@
+---
+title: "MTG LLM Similar Card Search"
+format: html
+date: "2025-04-26"
+---
+
+This is my first time using LLM embeddings for a program. The goal is to get magic cards similar to a card I'm searching for, which I do quite often.
+
+Magic cards are quite similar. For example:
+
+::: {layout-ncol=3}
+![Llanowar Elves](https://cards.scryfall.io/large/front/6/a/6a0b230b-d391-4998-a3f7-7b158a0ec2cd.jpg?1731652605)
+
+![Elvish Mystic](https://cards.scryfall.io/large/front/7/5/75918859-c93f-41b4-9ad0-a4a96c389f0d.jpg?1689998466)
+
+![Fyndhorn Elder](https://cards.scryfall.io/large/front/8/1/81c125cd-ea49-4511-a78c-42c1f7ce802d.jpg?1562921174)
+:::
+
+I'd like to use an embedding to 
+
+1. Search for a card by name
+2. Find cards similar to that
+
+I used an off-the-shelf model (`all-MiniLM-L6-v2`), downloaded card data from scryfall, then encoded cards like so:
+
+```
+# format
+name|type_line|mana_cost|oracle_text
+
+# example
+'Searslicer Goblin'|'Creature — Goblin Warrior'|'{1}{R}'|'Raid — At the beginning of your end step, if you attacked this turn, create a 1/1 red Goblin creature token.'
+```
+
+> I used Chat-GPT to scaffold the data processing and encoding scripts.  
+
+In other words, the model will turn that string into a vector. Ideally, similar strings (i.e. cards) will be near eachother.
+
+Here I set everything up. I wanted to try using duckdb to query the embeddings.
+
+```{python}
+import pandas as pd
+import duckdb
+import numpy as np
+import json
+from pathlib import Path
+from sentence_transformers import SentenceTransformer
+
+# Load files
+data_dir = Path('../../.data')
+embeddings = np.load(data_dir/"embeddings.npy")
+with open(data_dir/"id_map.json") as f:
+    id_map = json.load(f)
+
+# load model
+model = SentenceTransformer("all-MiniLM-L6-v2")
+
+# data prep
+emb_dim = embeddings.shape[1]
+card_embedding = (
+    pd.DataFrame([
+        {"id": card["id"], "embedding": vec.tolist()}
+        for card, vec in zip(id_map, embeddings)
+    ])
+)
+parquet_file=data_dir / 'oracle-cards-20250425090226.parquet'
+
+# database
+db = duckdb.connect(":memory:")
+db.execute(f""" 
+INSTALL vss;
+LOAD vss;
+
+create table card_embedding as 
+    select 
+        id
+        , embedding::DOUBLE[{emb_dim}] as embedding 
+    from card_embedding
+;
+
+create table card as select * from '{parquet_file}';
+""")
+
+# how many cards?
+db.sql('select count(*) as num_cards from card inner join card_embedding using(id)')
+```
+
+First, I need the ability to find the card I'm looking for in the database. I'll use the embedding for that.
+
+> Forgive any sloppiness. I wanted to focus on results, not code.
+
+```{python}
+def search_for_card(conn, model, search_term, limit=1):
+    # sentence to vector
+    search_vec = model.encode([search_term])[0]
+    emb_dim = len(search_vec)
+    search_vec_str = "ARRAY[" + ",".join(f"CAST({x} AS DOUBLE)" for x in search_vec) + "]"
+
+    # find similar vector
+    return conn.sql(f"""
+    select 
+        id             
+        , card.name
+        , array_distance(embedding, {search_vec_str}::DOUBLE[{emb_dim}]) AS dist
+    from card_embedding 
+    left join card using(id)
+    order by dist
+    limit {limit}
+    """)
+
+def fetch_top_search_id(conn, model, search_term):
+    return search_for_card(conn, model, search_term, limit=1).fetchone()[0]
+
+assert fetch_top_search_id(db, model, 'llanowar elves') == '6a0b230b-d391-4998-a3f7-7b158a0ec2cd'
+```
+
+Now I want to find similar cards given an id.
+
+```{python}
+def query_closest_cards_to_id(conn, id, limit=9):
+    ref_vec = (
+        conn.sql(f"select embedding from card_embedding where id='{id}'")
+        .fetchone()[0]
+    )
+    emb_dim = len(ref_vec)
+    ref_vec_str = "ARRAY[" + ",".join(f"CAST({x} AS DOUBLE)" for x in ref_vec) + "]"
+
+    return conn.sql(f"""
+        SELECT 
+            card.name
+            , card.mana_cost
+            , card.oracle_text
+            , array_distance(embedding, {ref_vec_str}::DOUBLE[{emb_dim}]) AS dist
+        FROM card_embedding
+        left join card using(id)
+        ORDER BY dist asc
+        LIMIT {limit}
+    """)
+
+query_closest_cards_to_id(db, '6a0b230b-d391-4998-a3f7-7b158a0ec2cd')
+```
+
+Gluing it all together:
+
+```{python}
+def query_closest_cards_to_search(conn, model, search_term, limit=9):
+    id = fetch_top_search_id(conn, model, search_term)
+    return query_closest_cards_to_id(conn, id, limit=limit)
+
+query_closest_cards_to_search(db, model, "llanowar elves")
+```
+
+## Eyeball Evaluation
+
+This ordering is not perfect. For example:
+
+- `Llanowar Tribe│ {G}{G}{G} │ {T}: Add {G}{G}{G}.` is the "top" result
+- `Fyndhorn Elves    │ {G}       │ {T}: Add {G}.` and other cards functionally identical to Llanowar Elves are rated lower.
+
+I think this happens because I encode the `name` of the card in the embedding, which I chose to make search easier. 
+
+- Perhaps I should make two embeddings if my use-case is scoped this narrowly.
+- The tradeoff is that I would need another API to do generalized search e.g. "{T}: Add {G}"
+
+## Extending
+
+We can make the query more flexible to account for different contexts. With this we combine the power of traditional querying with vector search.
+
+```{python}
+def sql_array_distance_from_search(conn, model, search_term):
+    id = fetch_top_search_id(conn, model, search_term)
+    ref_vec = (
+        conn.sql(f"select embedding from card_embedding where id='{id}'")
+        .fetchone()[0]
+    )
+    emb_dim = len(ref_vec)
+    ref_vec_str = "ARRAY[" + ",".join(f"CAST({x} AS DOUBLE)" for x in ref_vec) + "]"
+    return f"array_distance(embedding, {ref_vec_str}::DOUBLE[{emb_dim}])"
+
+db.sql(f""" 
+select 
+    name
+    , oracle_text
+    , {sql_array_distance_from_search(db, model, 'when you cycle')} as dist
+from card_embedding
+left join card using(id)
+where 1=1
+    and layout = 'normal'
+    and cmc = 2
+order by dist asc
+limit 9
+""")
+```
+
+## What's next?
+
+I think I need better recommendations before I go any further. The results need to be "good enough," but they're not quite there. I'll have to look into what it takes to refine the model for my use-case.
+
+Making an app (probably a simple webapp) would be the most helpful interface. Even 5-10 recommendations would be helpful.

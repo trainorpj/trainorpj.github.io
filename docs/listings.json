@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/mtg-similar-cards/index.html",
       "/posts/mtg-mana-problems/index.html",
       "/posts/college-football-rankings/index.html"
     ]
